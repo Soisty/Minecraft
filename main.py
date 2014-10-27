@@ -1,3 +1,4 @@
+#The three lines to follow import various things, like simple math operations
 import math
 import random
 import time
@@ -12,7 +13,7 @@ TICKS_PER_SEC = 60
 
 # Size of sectors used to ease block loading.
 SECTOR_SIZE = 16
-
+#The next 2 lines define speeds for various actions
 WALKING_SPEED = 5
 FLYING_SPEED = 15
 
@@ -30,6 +31,7 @@ TERMINAL_VELOCITY = 50
 
 PLAYER_HEIGHT = 2
 
+#This line defines a function that returns a cube with specific verticies
 def cube_vertices(x, y, z, n):
     """ Return the vertices of the cube at position x, y, z with size 2*n.
 
@@ -247,6 +249,7 @@ class Model(object):
                 self.show_block(position)
             self.check_neighbors(position)
 
+    #These lines define a function that removes a block in a specific position
     def remove_block(self, position, immediate=True):
         """ Remove the block at the given `position`.
 
